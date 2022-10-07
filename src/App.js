@@ -1,25 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import FormText from './form-text';
+import FormCheck from './form-check';
+import FormSelectFile from './form-select-file';
+import FormValidation from './form-validation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    //<FormText/>
+    //<FormCheck/>
+    //<FormSelectFile/>
+    <FormValidation/>
+  )
 }
 
 export default App;
