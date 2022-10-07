@@ -53,6 +53,12 @@ export default function FormValidation(){
                 </div>
 
                 <div className="form-group mb-3">
+                    <label htmlFor="price">ราคาสินค้า *</label>
+                    <input type="number" id="price" name="price" min="0" step="any" className="form-control form-control-sm" {...register('price', {validate: value => parseFloat(value) > 0}) } /> 
+                    {errors.price && <div style={err}>กําหนดราคาสินค้าเป็นตัวเลขที่มากกว่า 0</div>}
+                </div>
+
+                <div className="form-group mb-3">
                         <label htmlFor="detail">รายละเอียดสินค้า *</label>
                         <textarea id="detail" name="detail" rows="2" maxLength="250" className="form-control form-control-sm" {...register('detail',{required:true,minLength:1,maxLength:200})}>
 
